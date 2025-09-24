@@ -21,4 +21,11 @@ public class Controller {
         return "name: " + name  + " age: " + age;
     }
 
+    @GetMapping("/getPerson")
+    public Person getPerson(){
+        return new Person("mike", 23);
+    }
+
+
+
 }
