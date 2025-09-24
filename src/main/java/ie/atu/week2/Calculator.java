@@ -1,23 +1,23 @@
 package ie.atu.week2;
 
 public class Calculator {
-    private int num1;
-    private int num2;
+    private double num1;
+    private double num2;
     private String operation;
     private double result;
 
-    public Calculator(int num1, int num2, String operation) {
+    public Calculator(double num1, double num2, String operation) {
         this.num1 = num1;
         this.num2 = num2;
         this.operation = operation;
         this.result = 0;
     }
 
-    public int getNum1() {
+    public double getNum1() {
         return num1;
     }
 
-    public int getNum2() {
+    public double getNum2() {
         return num2;
     }
 
