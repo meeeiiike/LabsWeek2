@@ -26,7 +26,10 @@ public class Controller {
         return new Person("mike", 23);
     }
 
-
-
-
+    @GetMapping("/calculate")
+    public Calculator calculate(@RequestParam double num1, @RequestParam double num2, @RequestParam String operation){
+        Calculator calculator = new Calculator(num1, num2, operation);
+        calculator.calculateTotal();
+        return calculator;
+    }
 }
